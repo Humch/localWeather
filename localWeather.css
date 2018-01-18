@@ -64,3 +64,14 @@ div.all-padding {
     padding : 15px !important;
     min-height: 120px;
 }
+
+a.footer-icon {
+  margin-left: .5em;
+  margin-right: .5em;
+  color: white !important;
+}
+
+div.footerRow {
+  padding-top : 30px;
+  height: 10vh;
+}

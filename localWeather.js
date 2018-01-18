@@ -10,12 +10,11 @@ function displayWeather(weather) {
 }
 
 function switchUnit() {
-    console.log("bip !");
     $("#weatherTemperature").empty();
     $("#weatherTemperatureUnit").empty();
     if( celsius === 1) {
         celsius = 0;
-        fahrenheitTemp = (celsiusTemp * 1.8) + 32;
+        fahrenheitTemp = ((celsiusTemp * 1.8) + 32).toFixed(2);
         $("#weatherTemperature").append(fahrenheitTemp);
         $("#weatherTemperatureUnit").append("° F");
     } else {
