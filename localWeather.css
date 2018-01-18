@@ -1,0 +1,66 @@
+/* prevent FOUC issues */
+
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+}
+
+/* fullscreen background */
+
+html
+    { 
+  background-image: url("/img/default-bg.jpeg") !important;
+  background-attachment: fixed !important;
+  background-clip: border-box !important;
+  background-origin: padding-box !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  scroll-behavior: smooth;
+    }
+
+body
+    {
+        background: rgba(0, 0, 0, 0) !important ;
+    }
+
+div.container {
+    height: 80vh;
+}
+    
+div.lobster-font {
+  font-family: 'Lobster', cursive;
+}
+
+div.upper {
+    margin-top: 5vh;
+}
+
+div.content {
+    margin-top: 20vh;
+}
+
+.text-white {
+    color: white;
+}
+
+div.black-bg {
+    background-color: rgba(0,0,0,.3);
+}
+
+div.space-right {
+    margin-right : 2vh;
+}
+
+div.all-padding {
+    padding : 15px !important;
+    min-height: 120px;
+}
